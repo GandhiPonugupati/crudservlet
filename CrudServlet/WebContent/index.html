@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add New Guest</title>
+<style>
+div.container {
+	width: 100%;
+	border: 1px solid gray;
+}
+
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	max-width: 160px;
+	margin: 0;
+	padding: 1em;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+nav ul a {
+	text-decoration: none;
+}
+
+article {
+	margin-left: 170px;
+	border-left: 1px solid gray;
+	padding: 1em;
+	overflow: hidden;
+}
+
+.img-logo {
+	border-radius: 50%;
+	align: center;
+	width: 100px;
+	height: 100px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Paying Guest</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_self"><b>Guest
+							Register</b></a></li>
+				<hr>
+				<li><a href="ViewServlet" target="_self"><b>view Guests</b></a></li>
+				<hr>
+
+			</ul>
+		</nav>
+
+
+		<article>
+			
+				<h1 align="center">Adding Guest</h1>
+
+				<form action="SaveServlet" method="post">
+					<table align="center">
+						<tr>
+							<td>Name:</td>
+							<td><input type="text" name="name" /></td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td><input type="email" name="email" /></td>
+						</tr>
+						<tr>
+							<td>Mobile:</td>
+							<td><input type="text" name="mobile" /></td>
+						</tr>
+						<tr>
+							<td>Room No:</td>
+							<td><select name="room" style="width: 150px">
+									<option>101</option>
+									<option>102</option>
+									<option>103</option>
+									<option>104</option>
+									<option>105</option>
+									<option>106</option>
+									<option>107</option>
+									<option>108</option>
+									<option>109</option>
+									<option>110</option>
+									<option>201</option>
+									<option>202</option>
+									<option>203</option>
+									<option>204</option>
+									<option>205</option>
+									<option>206</option>
+									<option>207</option>
+									<option>208</option>
+									<option>209</option>
+									<option>210</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>Amount:</td>
+							<td><input type="number" name="amount" value="5000"
+								readonly="readonly" /></td>
+						</tr>
+						<tr>
+							<td>Date:</td>
+							<td><input type="date" name="date" /></td>
+						</tr>
+						<tr align="right">
+							<td colspan="2"><input type="submit" value="Confirm Room" /></td>
+						</tr>
+					</table>
+				</form>
+			
+
+			<br />
+			 <!-- <a href="ViewServlet">view Guests</a> -->
+		</article>
+		<footer>
+			<p>Design By Ug Software Solution</p>
+			<p>Developed by Gandhi</p>
+		
+		</footer>
+	</div>
+	
+</body>
+</html>
